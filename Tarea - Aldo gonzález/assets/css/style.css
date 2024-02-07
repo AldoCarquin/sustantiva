@@ -1,0 +1,217 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+}
+.icon-nav {
+    fill: #ffffff;
+    width: 44px;
+}
+
+.navbar {
+    height: 70px;
+    background-color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 128px;
+    padding-right: 128px;
+}
+.navbar li {
+    list-style: none;
+    padding-left: 57px;
+}
+.navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 350px;
+    margin: 0px;
+    padding-top: 52px;
+    background-image: url('/assets/img/bg-hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+}
+
+h1 {
+    text-align: right;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+header .container h2 {
+    padding-top: 20px;
+    text-align: right;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.sect-uno {
+    margin-top: 160px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sect-uno img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.sect-uno h2 {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    font-size: 24px;
+}
+.sect-uno p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.sect-dos {
+    width: 100%;
+    height: 500px;
+    background-color: #A4452C;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+
+}
+
+.sect-dos h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sect-dos h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sect-dos h4{
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 10px;
+}
+.sect-dos p{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.horizontal img {
+    width: 300px;
+    object-fit: contain;
+    margin-right: 40px;
+}
+
+.sect-tres {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.sect-tres h2 {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.sect-tres .horizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    padding: 10px;
+}
+
+.card img {
+    padding: 0px;
+    margin: 0px;
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+}
+.card h3 {
+    text-align: center;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none !important;
+    color: #000000;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orden-horizontal {
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orden-horizontal a{
+    padding: 10px;
+}
+.orden-horizontal a img {
+    width: 30px;
+}
+
+/* FONTS */
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

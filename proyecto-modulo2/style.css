@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Varela+Round&display=swap');
+
+.font-varela {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-permanent {
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 42px;
+}
+h2 {
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    background-color: #190042;
+    color: #fff;
+}
+h3 {
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-style: normal;
+    margin: 0%;
+    font-size: 24px;
+}
+.versus {
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-style: normal;
+    color: #190042;
+    font-size: 24px;
+}
+.todo {
+    position: relative;
+}
+
+.uno {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    color: #190042;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dos {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #190042;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px;
+    margin-left: 5px;
+}
+.tres {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    color: #190042;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+
+}
+.blanco {
+    color: #ffffff;
+}
+
+.number {
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 240px;
+}
+
+.letter {
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 240px;
+}
+
+.main-title {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+    font-family: "Permanent Marker";
+    font-weight: 400;
+    font-style: normal;
+    color: #190042;
+}
+.contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cajapc {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #190042;
+    color: #ffffff;
+    font-size: 70px;
+    border-radius: 20px;
+    margin: 5px;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajauser {
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: #190042;
+    background-color: #ffffff;
+    color: #190042;
+    font-size: 70px;
+    border-radius: 20px;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px
+}
+.seleccion {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 100%;
+}
+button {
+    width: 100px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #190042;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+    color: #330c73;
+
+}
+button:active{
+    background-color: #330c73;
+    color: #fff;
+}
+.fsp {
+    font-size: 80px;
+}
+
+.ro-90 {
+    transform: rotate(90deg);
+}
+.ro-180 {
+    transform: rotate(180deg);
+}
+.no-dis {
+    display: none;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas de NaN NaN</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="assets/js/scripts.js"></script>
+
+
+    <!-- Googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/380b37f5b9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="overall" class="overall">
+    <div class="caja">
+        <h1 class="ingrese">Hola.</h1>
+        <h3 class="sub-ingresa">Ingrese Nombre y Apellido del estudiante</h2>
+        <form class="login-form" id="login">
+            <label for="nombre">Nombre:</label>
+            <input class="label" type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input class="label" type="text" id="apellido" name="apellido" required>
+            <br>
+            <button class="login-button" type="button" onclick="guardarDatos()">Entrar</button>
+        </form>
+    </div>
+</div>
+    <head>
+        <h1 class=""> SISTEMA DE NOTAS</h1>
+        <h2 id="usuario">NaN NaN</h2>
+    </head>
+    <h3 class="">Sistema de notas</h3>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th class="minwidth-leftable">Asignatura</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Promedio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>
+                        <div class="tede">
+                            <span id="htmluno">0</span>
+                            <button type="button" onclick="modificarHtmlUno()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tede">
+                            <span id="htmldos">0</span>
+                            <button type="button" onclick="modificarHtmlDos()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tede">
+                            <span id="htmltres">0</span>
+                            <button type="button" onclick="modificarHtmlTres()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td><span id="htmlProm">0</span></td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>
+                        <div class="tede">
+                            <span id="cssuno">0</span>
+                            <button type="button" onclick="modificarCssUno()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tede">
+                            <span id="cssdos">0</span>
+                            <button type="button" onclick="modificarCssDos()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tede">
+                            <span id="csstres">0</span>
+                            <button type="button" onclick="modificarCssTres()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td><span id="cssProm">0</span></td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>
+                        <div class="tede">
+                            <span id="jsuno">0</span>
+                            <button type="button" onclick="modificarJsUno()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tede">
+                            <span id="jsdos">0</span>
+                            <button type="button" onclick="modificarJsDos()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tede">
+                            <span id="jstres">0</span>
+                            <button type="button" onclick="modificarJsTres()">
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td><span id="jsProm">0</span></td>
+                </tr>
+                <tr>
+                    <td>Promedio General</td>
+                    <td colspan="3"></td>
+                    <td><span id="genProm">0</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

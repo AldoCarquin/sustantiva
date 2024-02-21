@@ -1,64 +1,59 @@
-def suma (a, b):
+def suma(a, b):
     return a + b
 
-def resta (a, b):
+def resta(a, b):
     return a - b
 
-def multiplicacion (a, b):
+def multiplicacion(a, b):
     return a * b
 
-def division (a, b):
+def division(a, b):
     if b == 0:
         print("No es posible la división en 0!!!")
+        return None 
     else:
         return a / b
-    
-def evaluar(a,b):
-            if operacion == "+":
-                print(f"RESULTADO: {suma(a,b)}")
-                a = suma(a,b)
-            elif operacion == "-":
-                print(f"RESULTADO: {resta(a,b)}")
-                a = resta(a,b)
-            elif operacion == "*" or operacion == "x":
-                print(f"RESULTADO: {multiplicacion(a,b)}")
-                a = multiplicacion(a,b)
-            elif operacion == "/":
-                print(f"RESULTADO: {division(a,b)}")
-                a = division(a,b)
-            else:
-                print("Símbolo no valido.")
 
-def evOperacion (operacion):
-    while operacion != "+" and operacion != "-" and operacion != "*" and operacion != "x" and operacion != "/":
+def evOperacion(operacion):
+    while operacion not in ['+', '-', '*', 'x', '/','salir','n']:
         print("Operación no válida. Por favor ingrese otra operación.")
-        operacion=str(input("Operación:"))
-
-c = (evaluar)
+        operacion = input("Operación: ")
+    return operacion
 
 print("********************************************\n*************** Bienvenidx a ***************\n************** LA CALCULADORA **************\n***************  👁️  👄 👁️  💅 ***************\n********************************************\n\n")
 
-print("ATENCION")
-
-a = input("Primero ingrese el PRIMER valor:")
-
-print("AHORA ingresar el símbolo correspondiente a la operación deseada:\n+ Suma\n- Resta \n* o x Multiplicación\n/ división")
-        
+a = float(input("Ingrese el primer valor: "))
+print("\nIngresar el símbolo correspondiente a la operación deseada:\n+ Suma\n- Resta \n* o x Multiplicación\n/ División")
+operacion = input('Operación: ')
+operacion = evOperacion(operacion)
 
 while True:
-    operacion = (input("Operación:"))
-    evOperacion(operacion)
-    b = input("Ahora ingrese el OTRO valor:")        
-    c = evaluar(a, b)
-    a = c
+    try:    
 
+        b = float(input("Ingrese el otro valor: "))
+
+        if operacion == '+':
+            resultado = suma(a, b)
+        elif operacion == '-':
+            resultado = resta(a, b)
+        elif operacion in ['*', 'x']:
+            resultado = multiplicacion(a, b)
+        elif operacion == '/':
+            resultado = division(a, b)
+
+        print(f"\nRESULTADO: {resultado}\n")
+
+        a = resultado
+        operacion = input('Si desea salir, teclee "Salir".\nSi desea realizar una operación desde 0, ingrese n\n\nOperación:')
+        operacion = evOperacion(operacion)
+        if operacion == "salir":
+            print('Saliendo de\n********************************************\n************** LA CALCULADORA **************\n***************  👁️  👄 👁️  💅 ***************\n********************************************')
+            break
+        elif operacion== 'n':
+            a = float(input("Ingrese el primer valor: "))
+            operacion = input('Operación: ', )
+            operacion = evOperacion(operacion)
         
-        
-
-        
-
-
-
-
-
+    except ValueError:
+        print("Valor ingresado no valido. Reintente.")
 

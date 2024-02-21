@@ -28,6 +28,7 @@ while True:
         # OPCION 2 AGREGAR TAREA
         elif opcion == 2:
             tarea=input('Ingrese una tarea para agregar:')
+            #TODO: Crear while para que cree una tarea con el nombre válido. Cambiar mensaje de error a No se permiten tareas vacías
             if tarea== "":
                 print('Tarea no valida. Reintente.')
             else:
@@ -137,7 +138,7 @@ while True:
         
         # EXCEPCIONES
         else:
-            print('Menú no valido. Por favor vuelve a ingresar un número del 1 al 6.')
+            print('Menú no valido. Por favor vuelve a ingresar un número del 1 al 7.')
     except ValueError:
-        print('Valor invalido. Por favor ingrese un valor numérico del 1 al 6')
+        print('Valor invalido. Por favor ingrese un valor numérico del 1 al 7')
     

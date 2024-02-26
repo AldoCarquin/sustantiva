@@ -141,6 +141,7 @@ def main():
                     operacion = evOperacion(operacion)
         except ValueError:
             print('Valor ingresado invalido.')
+        break
 
 
 

@@ -1,11 +1,11 @@
 import math
 
 materias = ['Lenguaje', 'Matemáticas', 'Historia', 'Ciencias', 'Música', 'Arte']
-lenguaje = [3, 4, 5, 6]
-matematicas = [5, 6, 3, 5]
-historia = [2]
-ciencias = [2, 2, 2]
-musica = [4, 5, 2]
+lenguaje = []
+matematicas = []
+historia = []
+ciencias = []
+musica = []
 arte = []
 
 asignatura = []

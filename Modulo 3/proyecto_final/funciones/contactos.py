@@ -1,9 +1,4 @@
-contactos = {
-    "tobi": 949494994,
-    "aldo": 929299292,
-    "Tyfany": 3141321,
-    "shiuska": 3142132
-}
+contactos = {}
 
 def main():
     opcion = 0
@@ -18,7 +13,7 @@ def main():
     print("  \|===|/")
     print("   '---'")
 
-    while True:
+    while opcion != 4:
         try:
             while opcion != 4:
                 print("\n*************** MENU *****************\n")
@@ -54,6 +49,7 @@ def ver(contactos):
     if len(contactos) == 0:
         print("El directorio está vacio.")
     else:
+        print("*** LOS CONTACTOS SON LOS SIGUIENTES ***")
         number = 1
         for x,y in contactos.items():
             print(f"{number}.- {x}: {y}")

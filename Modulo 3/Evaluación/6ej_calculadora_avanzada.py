@@ -36,41 +36,47 @@ operacion = evOperacion(operacion)
 while True:
     try:    
         if operacion in ["r", "rad", "sin", "cos", "tan", "lognat", "log10", "f"]:
-            if operacion == "r":
-                resultado = math.sqrt(a)
-            elif operacion == "rad":
-                resultado = math.radians(a)
-            elif operacion == "sin":
-                resultado = math.sin(a)
-            elif operacion == "cos":
-                resultado = math.cos(a)
-            elif operacion == "tan":
-                if a == 90 or a == 270:
-                    print('El resultado es Infinito (Tangente de 90º o 270º).\nEl valor ingresado volverá a 0.')
-                    resultado = 0
-                else:
-                    resultado = math.tan(a)
-            elif operacion == "lognat":
-                resultado = math.log(a)
-            elif operacion == "log10":
-                resultado = math.log10(a)
-            elif operacion == "f":
-                resultado = math.factorial(a)
+            match operacion:
+                case "r":
+                    resultado = math.sqrt(a)
+                case "rad":
+                    resultado = math.radians(a)
+                case "sin":
+                    resultado = math.sin(a)
+                case "cos":
+                    resultado = math.cos(a)
+                case "tan":
+                    if a == 90 or a == 270:
+                        print('El resultado es Infinito (Tangente de 90º o 270º).\nEl valor ingresado volverá a 0.')
+                        resultado = 0
+                    else:
+                        resultado = math.tan(a)
+                case "lognat":
+                    resultado = math.log(a)
+                case "log10":
+                    resultado = math.log10(a)
+                case "f":
+                    if a < 0:
+                        print(f"Valor {a} es negativo. No es posible hacer un factorial.")
+                    else:
+                        paso = int(a)
+                        resultado = math.factorial(paso)
 
             print(f'Resultado: {resultado}\n')
         else:
             b = float(input("Ingrese el otro valor: "))
 
-            if operacion == '+':
-                resultado = suma(a, b)
-            elif operacion == '-':
-                resultado = resta(a, b)
-            elif operacion in ['*', 'x']:
-                resultado = multiplicacion(a, b)
-            elif operacion == '/':
-                resultado = division(a, b)
-            elif operacion == "p":
-                resultado = potencia(a, b)
+            match operacion:
+                case '+':
+                    resultado = suma(a, b)
+                case '-':
+                    resultado = resta(a, b)
+                case ['*', 'x']:
+                    resultado = multiplicacion(a, b)
+                case '/':
+                    resultado = division(a, b)
+                case "p":
+                    resultado = potencia(a, b)
 
             print(f"\nRESULTADO: {resultado}\n")
 

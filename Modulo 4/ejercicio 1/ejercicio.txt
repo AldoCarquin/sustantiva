@@ -1,0 +1,36 @@
+En un sistema educativo modelado a través de clases, las asociaciones entre ellas
+reflejan la compleja red de interacciones que ocurren entre los diversos elementos
+del entorno educativo. Las clases Estudiante y Profesor son ejemplos centrales en
+esta estructura, cada una con sus atributos específicos y métodos inherentes.
+
+La clase Estudiante posee atributos como nombre y edad, junto con métodos como
+obtener_nombre() y obtener_edad(), que permiten acceder y modificar esta información.
+Asociada estrechamente con la clase Asignatura, la cual puede ser inscrita por el
+estudiante mediante el método estudiar(asignatura: Asignatura). Esta asociación se
+materializa a través de una relación de asociación, reflejando la inscripción del
+estudiante en una o más asignaturas.
+
+Por otro lado, la clase Profesor presenta atributos como nombre y especialidad,
+además de métodos como obtener_especialidad(). Esta clase también está asociada
+con la clase Asignatura, pero de manera distinta. A través del método
+enseñar(asignatura: Asignatura), el profesor se convierte en el facilitador del
+conocimiento, impartiendo la asignatura a los estudiantes. Esta relación se modela
+mediante una relación de asociación similar a la de la clase Estudiante.
+
+Además de estas relaciones de asociación, tanto la clase Estudiante como la clase
+Profesor heredan atributos y métodos de la clase Persona, la cual sirve como una
+superclase común. Esta herencia permite la reutilización de código y promueve la
+coherencia en el sistema educativo. Los atributos y métodos compartidos, como nombre
+y obtener_nombre(), se heredan de manera transparente, simplificando el diseño y
+la implementación del sistema.
+
+En cuanto a la visibilidad de atributos y métodos, se establece una variedad de
+niveles para controlar su acceso y modificación. Por ejemplo, los atributos nombre
+y edad pueden ser definidos como privados (-) para restringir su acceso directo desde
+fuera de la clase, mientras que los métodos como obtener_nombre() pueden ser públicos
+(+) para permitir su invocación desde cualquier parte del sistema.
+
+En resumen, las asociaciones entre clases en un sistema educativo están intrínsecamente
+ligadas a la dinámica entre estudiantes, profesores y asignaturas. Estas relaciones
+se reflejan en atributos, métodos, herencias y visibilidades, construyendo un modelo
+sólido que representa la complejidad del entorno educativo.

@@ -70,7 +70,7 @@ def main():
                     global number
                     number += 1
                     Pelicula.ingreso_Pelicula()
-                    continuar = input("¿Desea ingresar otro coche? (s/n): ")
+                    continuar = input("¿Desea ingresar otra película? (s/n): ")
                     if continuar.lower() != 's':
                         break
             case 2:

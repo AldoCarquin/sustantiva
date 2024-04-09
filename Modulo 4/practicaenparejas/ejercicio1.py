@@ -39,7 +39,7 @@ class Auto():
 
     def ingreso_auto():
         global number
-        print(f'Coche número {number}')
+        print(f'Auto número {number}')
         color = input(f'Ingrese el color del auto {number}: ')
         marca = input(f'Ingrese la marca del auto {number}: ')
         modelo = input(f'Ingrese el modelo del auto {number}: ')
